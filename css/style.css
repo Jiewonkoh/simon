@@ -4,6 +4,11 @@
 *,*::before,*::after {
   box-sizing: border-box;
 }
+::selection {
+  color: #f3f5f6; 
+  background: #ef5350;
+}
+
 .readable-hidden {
   background-color: pink;
   position: absolute;
@@ -159,6 +164,11 @@ body {
   font-size: 2rem;
   /* background-image:linear-gradient(45deg,red,green); */
 }
+/* responsive 이미지 */
+img{
+  max-width:100%;
+  height: auto;
+}
 .container {
   box-sizing: border-box;
   
@@ -262,4 +272,79 @@ body {
 .copyright{
   
   margin-left: auto;
+}
+/*portfolio 공통*/
+.portfolio{
+  text-align: center;
+}
+.light{
+  background-color: #fff;
+  padding: 1em 2em;
+}
+.dark{
+  background-color: #1a1e23;
+  color:#f3f5f6;
+}
+.dark .comment{
+  color: #aaa;
+  font-size: 2rem;
+  font-style: italic;
+}
+.portfolio .group{
+  text-align: left;
+  padding: 0;
+}
+.portfolio .wrapper{
+ width: 750px;
+ margin: 0 auto;
+ text-align: left;
+}
+.portfolio .title{
+  font-size: 5rem;
+  font-family: "Spoqa Han Sans";
+  font-weight: 700;
+  padding: 1.5em 0;
+  text-transform: uppercase;
+}
+.portfolio p{
+  font-size: 3rem;
+  margin: 1.5em 0;
+  line-height: 1.8;
+}
+.portfolio .small{
+  font-size:  1.5rem;
+  font-weight: 600;
+  padding: 1em 0;
+  text-align: left;
+}
+.portfolio .medium{
+  font-size: 4rem;
+}
+.portfolio .thumbnail{
+  width: 100%;
+  font-size: 1.5rem;
+}
+.portfolio ol{
+  list-style-type: decimal;
+  padding-left: 50px;
+}
+.portfolio li{
+  margin: 1em 0;
+}
+.next-portfolio{
+  padding: 4em 3em;
+  display: flex;
+  justify-content: space-between;
+}
+.next-title{
+  color:#aaa
+  
+  text-transform: 
+
+}
+.next-portfolio a{
+  color: #ef5350;
+}
+.next-portfolio a::after{
+  content: " → "
 }
